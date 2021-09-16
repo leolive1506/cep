@@ -1,0 +1,35 @@
+body .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* 
+.main-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: "persolnalData cep";
+    gap: 2rem
+}
+
+fieldset .person-data {
+    grid-area: persolnalData;
+}
+
+fieldset .cep {
+    grid-area: cep;
+}
+
+
+@media(max-width: 730px) {
+    
+    .main-group {
+        grid-template-columns: 1fr;
+    }
+
+    group-form-item {
+        border: 0
+    }
+} */

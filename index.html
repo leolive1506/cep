@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Cadastro de novo usuário</h1>
+        </header>
+        <form action="">
+            
+            <div class="main-group">
+                <fieldset class="group-form-item person-data">
+                    <legend>Dados Pessoais</legend>
+                    <div class="form-group">
+                        <input id="name" placeholder="nome" class="form-control" type="text">
+                        <label for="name">Nome</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input id="lastName" placeholder="Sobrenome" class="form-control" type="text">
+                        <label for="lastName">Sobrenome</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input id="numberPhone" placeholder="Sobrenome" class="form-control" type="text">
+                        <label for="numberPhone">Numero de telefone</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input id="e-mail" placeholder="Sobrenome" class="form-control" type="email">
+                        <label for="e-mail">E-mail</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="group-form-item cep">
+                    <legend>Endereço</legend>
+                    <div class="form-group">
+                        <input id="cep" maxlength="9" type="text" class="form-control" placeholder="00000-000">
+                        <label for="cep">CEP</label>
+                    </div>
+                    <div class="form-group">
+                        <input id="logradouro" type="text" class="form-control" placeholder="Rua São Paulo">
+                        <label for="logradouro">Logradouro</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input id="bairro" type="text" class="form-control" placeholder="Paulista">
+                        <label for="bairro">Bairro</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input id="localidade" type="text" class="form-control" placeholder="Uberlândia">
+                        <label for="localidade">Localidade</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input id="uf" type="text" class="form-control" placeholder="MG">
+                        <label for="uf">UF</label>
+                    </div>
+                </fieldset>
+            </div>
+            
+
+            
+
+                <button>Concluir</button>
+        </form>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
