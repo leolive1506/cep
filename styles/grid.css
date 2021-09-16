@@ -1,12 +1,20 @@
 body .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
+    display: grid;
+    grid-template: "header header" 10vh 
+                   "form form" 90vh;
+    justify-content:center;
     align-items: center;
     
 }
-/* 
+
+header {
+    grid-area: header
+}
+
+form {
+    grid-area: form
+}
+
 .main-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -23,13 +31,24 @@ fieldset .cep {
 }
 
 
+
+
 @media(max-width: 730px) {
+
+    body .container {
+        display: grid;
+        grid-template: "header" 1fr
+                       "form" 2fr;
+        justify-content:center;
+        align-items: center;
+        grid-gap: 2rem
+        
+    }
     
     .main-group {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "persolnalData"
+                            "cep";
     }
-
-    group-form-item {
-        border: 0
-    }
-} */
+}
